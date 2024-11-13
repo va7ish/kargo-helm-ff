@@ -1,3 +1,4 @@
 featureFlags:
-  FEATURE_AAA: enabled
-  FEATURE_BBB: enabled
+  FEATURE_FOO: enabled
+  FEATURE_BAR: enabled
+  FEATURE_BAZ: enabled
