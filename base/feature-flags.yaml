@@ -1,0 +1,2 @@
+featureFlags:
+  FEATURE_FOO: enabled
