@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kargo-helm-ff
+  name: kargo-helm-ff-aoa
 spec:
   project: default
   syncPolicy:
