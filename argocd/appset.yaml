@@ -12,12 +12,12 @@ spec:
       - path: env/*
   template:
     metadata:
-      name: kargo-helm-{{path.basename}}
+      name: kargo-helm-ff-{{path.basename}}
       annotations:
-        kargo.akuity.io/authorized-stage: kargo-helm:{{path.basename}}
+        kargo.akuity.io/authorized-stage: kargo-helm-ff:{{path.basename}}
     spec:
       destination:
-        namespace: kargo-helm-{{path.basename}}
+        namespace: kargo-helm-ff-{{path.basename}}
         name: mac2
       project: kargo-helm-ff
       source:
