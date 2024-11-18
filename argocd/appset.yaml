@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: kargo-helm
+  name: kargo-helm-ff-gb
   namespace: argocd
 spec:
   generators:
   - git:
-      repoURL: https://github.com/jessesuen/kargo-helm.git
+      repoURL: https://github.com/dhpup/kargo-helm-ff.git
       revision: HEAD
       directories:
       - path: env/*
@@ -19,10 +19,10 @@ spec:
       destination:
         namespace: kargo-helm-{{path.basename}}
         name: demo
-      project: kargo-helm
+      project: kargo-helm-ff
       source:
         path: charts/guestbook
-        repoURL: https://github.com/jessesuen/kargo-helm.git
+        repoURL: https://github.com/dhpup/kargo-helm-ff.git
         helm:
           valueFiles:
           - "/env/{{path.basename}}/values.yaml"

@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kargo-helm-ff
+spec:
+  project: default
+  syncPolicy:
+    automated: {}
+  source:
+    repoURL: https://github.com/dhpup/kargo-helm-ff
+    path: argocd
+    directory:
+      recurse: true
+  destination:
+    name: in-cluster
+    namespace: argocd
