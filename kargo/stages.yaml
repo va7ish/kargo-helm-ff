@@ -2,7 +2,7 @@ apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
 metadata:
   name: dev
-  namespace: kargo-helm
+  namespace: kargo-helm-ff
   annotations:
     kargo.akuity.io/color: red
 spec:
@@ -22,7 +22,7 @@ spec:
       steps:
       - uses: git-clone
         config:
-          repoURL: https://github.com/jessesuen/kargo-helm.git
+          repoURL: https://github.com/dhpup/kargo-helm-ff.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -34,7 +34,7 @@ spec:
         config:
           path: ./out/env/dev/values.yaml
           images:
-          - image: ghcr.io/jessesuen/guestbook
+          - image: ghcr.io/dhpup/guestbook
             key: image.tag
             value: Tag
 
@@ -59,7 +59,7 @@ spec:
       - uses: argocd-update
         config:
           apps:
-          - name: kargo-helm-dev
+          - name: kargo-helm-ff-dev
             sources:
-            - repoURL: https://github.com/jessesuen/kargo-helm.git
+            - repoURL: https://github.com/dhpup/kargo-helm-ff.git
               desiredCommitFromStep: commit
