@@ -1,4 +1,4 @@
 image:
-  tag: 0.1.40
+  tag: 0.1.37
 
 replicaCount: 1
