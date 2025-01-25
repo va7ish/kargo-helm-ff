@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/dhpup/kargo-helm-ff.git
+      repoURL: https://github.com/va7ish/kargo-helm-ff.git
       revision: HEAD
       directories:
       - path: env/*
@@ -22,7 +22,7 @@ spec:
       project: kargo-helm-ff
       source:
         path: charts/guestbook
-        repoURL: https://github.com/dhpup/kargo-helm-ff.git
+        repoURL: https://github.com/va7ish/kargo-helm-ff.git
         helm:
           valueFiles:
           - "/env/{{path.basename}}/values.yaml"

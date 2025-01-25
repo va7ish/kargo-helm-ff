@@ -5,7 +5,7 @@ metadata:
 spec:
   project: kargo-helm-ff
   source:
-    repoURL: https://github.com/dhpup/kargo-helm-ff.git
+    repoURL: https://github.com/va7ish/kargo-helm-ff.git
     path: kargo
   destination:
     server: https://b5bxdj947v9xturb-cplane.kargosvcs.akuity.cloud

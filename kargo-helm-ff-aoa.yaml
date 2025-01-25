@@ -7,7 +7,7 @@ spec:
   syncPolicy:
     automated: {}
   source:
-    repoURL: https://github.com/dhpup/kargo-helm-ff
+    repoURL: https://github.com/va7ish/kargo-helm-ff
     path: argocd
     directory:
       recurse: true

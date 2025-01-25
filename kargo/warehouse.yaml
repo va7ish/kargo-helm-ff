@@ -7,7 +7,7 @@ spec:
   shard: kargo-agent
   subscriptions:
   - image:
-      repoURL: ghcr.io/dhpup/guestbook
+      repoURL: ghcr.io/va7ish/guestbook
       imageSelectionStrategy: SemVer
 
 ---
@@ -23,6 +23,6 @@ spec:
       branch: main
       commitSelectionStrategy: NewestFromBranch
       discoveryLimit: 20
-      repoURL: https://github.com/dhpup/kargo-helm-ff.git
+      repoURL: https://github.com/va7ish/kargo-helm-ff.git
       includePaths:
       - base/feature-flags.yaml

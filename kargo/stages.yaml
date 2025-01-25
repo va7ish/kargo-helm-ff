@@ -21,7 +21,7 @@ spec:
       steps:
       - uses: git-clone
         config:
-          repoURL: https://github.com/dhpup/kargo-helm-ff.git
+          repoURL: https://github.com/va7ish/kargo-helm-ff.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -33,7 +33,7 @@ spec:
         config:
           path: ./out/env/dev/values.yaml
           images:
-          - image: ghcr.io/dhpup/guestbook
+          - image: ghcr.io/va7ish/guestbook
             key: image.tag
             value: Tag
 
@@ -60,7 +60,7 @@ spec:
           apps:
           - name: kargo-helm-ff-dev
             sources:
-            - repoURL: https://github.com/dhpup/kargo-helm-ff.git
+            - repoURL: https://github.com/va7ish/kargo-helm-ff.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -88,7 +88,7 @@ spec:
       steps:
       - uses: git-clone
         config:
-          repoURL: https://github.com/dhpup/kargo-helm-ff.git
+          repoURL: https://github.com/va7ish/kargo-helm-ff.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -100,7 +100,7 @@ spec:
         config:
           path: ./out/env/staging/values.yaml
           images:
-          - image: ghcr.io/dhpup/guestbook
+          - image: ghcr.io/va7ish/guestbook
             key: image.tag
             value: Tag
 
@@ -127,7 +127,7 @@ spec:
           apps:
           - name: kargo-helm-ff-staging
             sources:
-            - repoURL: https://github.com/dhpup/kargo-helm-ff.git
+            - repoURL: https://github.com/va7ish/kargo-helm-ff.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -155,7 +155,7 @@ spec:
       steps:
       - uses: git-clone
         config:
-          repoURL: https://github.com/dhpup/kargo-helm-ff.git
+          repoURL: https://github.com/va7ish/kargo-helm-ff.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -167,7 +167,7 @@ spec:
         config:
           path: ./out/env/prod/values.yaml
           images:
-          - image: ghcr.io/dhpup/guestbook
+          - image: ghcr.io/va7ish/guestbook
             key: image.tag
             value: Tag
 
@@ -194,5 +194,5 @@ spec:
           apps:
           - name: kargo-helm-ff-prod
             sources:
-            - repoURL: https://github.com/dhpup/kargo-helm-ff.git
+            - repoURL: https://github.com/va7ish/kargo-helm-ff.git
               desiredCommitFromStep: commit
