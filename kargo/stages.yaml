@@ -4,7 +4,7 @@ metadata:
   name: dev
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
+  # shard: kargo-agent
   requestedFreight:
   - origin:
       kind: Warehouse
@@ -69,7 +69,7 @@ metadata:
   name: staging
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
+  # shard: kargo-agent
   requestedFreight:
   - origin:
       kind: Warehouse
@@ -136,7 +136,7 @@ metadata:
   name: prod
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
+  # shard: kargo-agent
   requestedFreight:
   - origin:
       kind: Warehouse
