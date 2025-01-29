@@ -4,7 +4,7 @@ metadata:
   name: guestbook
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
+  # shard: kargo-agent
   subscriptions:
   - image:
       repoURL: ghcr.io/va7ish/guestbook
@@ -17,7 +17,7 @@ metadata:
   name: features
   namespace: kargo-helm-ff
 spec:
-  shard: kargo-agent
+  # shard: kargo-agent
   subscriptions:
   - git:
       branch: main
