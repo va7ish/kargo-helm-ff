@@ -18,7 +18,7 @@ spec:
     spec:
       destination:
         namespace: kargo-helm-ff-{{path.basename}}
-        name: mac2
+        name: ishapiro-kargo-poc #Cluster name
       project: kargo-helm-ff
       source:
         path: charts/guestbook
